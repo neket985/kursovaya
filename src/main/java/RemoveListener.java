@@ -1,23 +1,27 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.HashMap;
 import java.util.LinkedList;
 
 /**
  * Created by nikitos on 15.12.16.
  */
 public class RemoveListener implements ActionListener {
-    LinkedList<Person> workers;
+    HashMap<Integer, Person> workers;
+    LinkedList<Person> workersShown;
     JTable table;
     public void actionPerformed(ActionEvent e) {
         int i = table.getSelectedRow();
         if(i!=-1) {
-            workers.remove(i);
+            workers.remove(workersShown.get(i).id);
+            workersShown.remove(i);
             table.revalidate();
         }
     }
-    RemoveListener (LinkedList<Person> workers, JTable table){
+    RemoveListener (HashMap<Integer, Person> workers, LinkedList<Person> workersShown, JTable table){
         this.workers = workers;
+        this.workersShown = workersShown;
         this.table = table;
     }
 }

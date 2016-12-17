@@ -47,7 +47,7 @@ public class MyTableModel implements TableModel {
         Person person = workers.get(rowIndex);
         switch (columnIndex) {
             case 0:
-                return ++id;
+                return person.id;
             case 1:
                 return person.firstname;
             case 2:
