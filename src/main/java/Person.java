@@ -1,8 +1,5 @@
 import java.sql.Date;
 
-/**
- * Created by nikitos on 11.12.16.
- */
 public class Person {
     int id=0;
     String firstname;

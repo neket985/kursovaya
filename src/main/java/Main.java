@@ -9,9 +9,6 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedList;
 
-/**
- * Created by nikitos on 11.12.16.
- */
 public class Main {
     static final String[] listComboBox = {"-", "id", "Имя", "Фамилия", "Дата рождения", "Должность", "Оклад", "Квалификация"};
 

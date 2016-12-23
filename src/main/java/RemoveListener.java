@@ -4,9 +4,6 @@ import java.awt.event.ActionListener;
 import java.util.HashMap;
 import java.util.LinkedList;
 
-/**
- * Created by nikitos on 15.12.16.
- */
 public class RemoveListener implements ActionListener {
     HashMap<Integer, Person> workers;
     LinkedList<Person> workersShown;

@@ -2,9 +2,6 @@ import javax.swing.event.TableModelListener;
 import javax.swing.table.TableModel;
 import java.util.LinkedList;
 
-/**
- * Created by nikitos on 11.12.16.
- */
 public class MyTableModel implements TableModel {
     String[] columnNames = {"id", "Имя", "Фамилия", "Дата рождения", "Должность", "Оклад", "Квалификация"};
     LinkedList<Person> workers;
